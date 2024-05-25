@@ -1,38 +1,38 @@
-const canonicalUrl = 'https://aulianza.id';
-const metaImage = 'https://cloud.aulianza.com/public/images/aulianza-id.png';
+const canonicalUrl = 'https://hame.my.id';
+const metaImage = 'https://wallpapers.com/images/featured/1080p-3qmj7oaige168170.jpg';
 const metaDescription =
-  'Seasoned Software Engineer especially in Frontend side, with a passion for creating pixel-perfect web experiences';
+  'Someone who likes playing with cameras and making videos, alternating coding with self-study';
 
 const defaultSEOConfig = {
-  defaultTitle: 'Ryan Aulia - Personal Website',
+  defaultTitle: 'Ilham Shofa - Personal Website',
   description: metaDescription,
   canonical: canonicalUrl,
   openGraph: {
     canonical: canonicalUrl,
-    title: 'Ryan Aulia - Personal Website',
+    title: 'Ilham Shofa - Personal Website',
     description: metaDescription,
     type: 'website',
     images: [
       {
         url: metaImage,
-        alt: 'aulianza.id og-image',
+        alt: 'hame.my.id og-image',
         width: 800,
         height: 600,
       },
       {
         url: metaImage,
-        alt: 'aulianza.id og-image',
+        alt: 'hame.my.id og-image',
         width: 1200,
         height: 630,
       },
       {
         url: metaImage,
-        alt: 'aulianza.id og-image',
+        alt: 'hame.my.id og-image',
         width: 1600,
         height: 900,
       },
     ],
-    site_name: 'aulianza.id',
+    site_name: 'hame.my.id',
   },
   twitter: {
     handle: '@handle',

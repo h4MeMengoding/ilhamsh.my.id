@@ -34,14 +34,14 @@ const LearnContentDetailPage: NextPage<{ data: MdxFileContentProps }> = ({
           article: {
             publishedTime: meta?.updated_at,
             modifiedTime: meta?.updated_at,
-            authors: ['Ryan Aulia'],
+            authors: ['Ilham Shofa'],
           },
           images: [
             {
               url: meta?.cover_url as string,
             },
           ],
-          siteName: 'Ryan Aulia',
+          siteName: 'Ilham Shofa',
         }}
       />
       <Container data-aos='fade-up' className='mb-10'>
