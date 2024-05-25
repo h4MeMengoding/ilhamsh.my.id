@@ -12,7 +12,7 @@ interface BlogListHeaderProps {
 const BlogListHeader = ({ viewOption, setViewOption }: BlogListHeaderProps) => {
   return (
     <div className='mb-5 flex items-center justify-between text-[15px]'>
-      <SectionHeading title='Latest Articles' />
+      <SectionHeading title='Artikel Terbaru' />
       <div className='flex cursor-pointer gap-2 px-1'>
         <ViewOptions
           option={viewOption}

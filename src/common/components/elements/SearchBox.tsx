@@ -16,7 +16,7 @@ const SearchBox = () => {
         onClick={() => handleOpenCommandPalette()}
         className='w-full text-[15px] hover:cursor-text'
       >
-        Search
+        Cari
       </span>
       <div className='flex items-center gap-0.5 rounded bg-neutral-200 px-1 py-0.5 text-xs dark:bg-neutral-800'>
         <CommandIcon className='mt-0.5' />

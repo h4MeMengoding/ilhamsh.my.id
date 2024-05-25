@@ -24,7 +24,7 @@ const iconSize = 20;
 
 export const MENU_ITEMS: MenuItemProps[] = [
   {
-    title: 'Home',
+    title: 'Beranda',
     href: '/',
     icon: <HomeIcon size={iconSize} />,
     isShow: true,
@@ -42,7 +42,7 @@ export const MENU_ITEMS: MenuItemProps[] = [
     type: 'Pages',
   },
   {
-    title: 'Projects',
+    title: 'Projek',
     href: '/projects',
     icon: <ProjectIcon size={iconSize} />,
     isShow: true,
@@ -60,7 +60,7 @@ export const MENU_ITEMS: MenuItemProps[] = [
     type: 'Pages',
   },
   {
-    title: 'Learn',
+    title: 'Buku',
     href: '/learn',
     icon: <LearnIcon size={iconSize} />,
     isShow: true,
@@ -68,17 +68,17 @@ export const MENU_ITEMS: MenuItemProps[] = [
     eventName: 'Pages: Learn',
     type: 'Pages',
   },
-  // {
-  //   title: 'About',
-  //   href: '/about',
-  //   icon: <ProfileIcon size={iconSize} />,
-  //   isShow: true,
-  //   isExternal: false,
-  //   eventName: 'Pages: About',
-  //   type: 'Pages',
-  // },
   {
-    title: 'Contact',
+    title: 'Tentang',
+    href: '/about',
+    icon: <ProfileIcon size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: About',
+    type: 'Pages',
+  },
+  {
+    title: 'Kontak',
     href: '/contact',
     icon: <ContactIcon size={iconSize} />,
     isShow: true,
@@ -87,7 +87,7 @@ export const MENU_ITEMS: MenuItemProps[] = [
     type: 'Pages',
   },
   {
-    title: 'Guestbook',
+    title: 'Buku Tamu',
     href: '/guestbook',
     icon: <ChatIcon size={iconSize} />,
     isShow: true,
@@ -99,7 +99,7 @@ export const MENU_ITEMS: MenuItemProps[] = [
 
 export const MENU_APPS: MenuItemProps[] = [
   {
-    title: 'JS Playground',
+    title: 'Taman JS',
     href: '/playground',
     icon: <SiJavascript size={iconSize} />,
     isShow: true,

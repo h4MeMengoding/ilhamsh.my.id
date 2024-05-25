@@ -1,23 +1,23 @@
 export const ABOUT = `
 <p>
-    Hello! Thanks for stopping by my personal website.
+    Halo, terimakasih telah mengunjungi website saya.
 </p>
 <p>
-    I'm Ryan. I've been working in web development for over 10 years, doing both the coding you see on the screen (frontend) and the stuff that happens behind the scenes (backend). I know how to manage projects using methods like Waterfall and Agile. But what really gets me excited is making websites and apps that are easy for everyone to use and look good too!
+    Saya Ilham. Saya memiliki minat yang besar dalam dunia videografi, dimana saya senang mengoperasikan kamera dan mengabadikan momen-momen berharga. Dalam setiap kesempatan, saya selalu berusaha menangkap sudut-sudut terbaik yang dapat menceritakan sebuah kisah melalui lensa kamera. Bagi saya, videografi adalah seni yang memadukan teknik dan kreativitas untuk menghasilkan karya yang bermakna.
 </p>
 <p>
-    I'm really into JavaScript and PHP, which are languages used to build websites. I also know a bunch of frameworks that make building websites even easier, like React, Vue, Angular, Node.js, and PHP frameworks like Codeigniter and Laravel. I love learning about new web tools and features.
+    Selain mahir dalam mengoperasikan kamera, saya juga pandai dalam mengedit video. Saya menggunakan berbagai software editing untuk menyempurnakan hasil rekaman saya, mulai dari penggabungan video yang saya lakukan di Adobe Premiere Pro, penambahan efek visual di Adobe After Effect, pewarnaan di Davinci, dan penyempurnaan suara di Adobe Audition. Proses editing bagi saya adalah tahap yang sangat penting, dimana sebuah video bisa menjadi lebih hidup dan menarik. Saya selalu berusaha untuk menghasilkan video yang tidak hanya indah secara visual tetapi juga memiliki pesan yang kuat.
 </p>
 <p>
-    In my career, I've led teams to build software for a wide range of companies, from large corporations to innovative startups.
+    Tidak hanya berkutat dalam dunia videografi, saya juga memiliki kemampuan dasar dalam coding website. Saya senang menciptakan situs web yang fungsional dan estetis, yang dapat mendukung berbagai proyek digital. Dengan kemampuan ini, saya mampu mengintegrasikan konten video saya ke dalam website, sehingga menghasilkan sebuah platform yang menarik dan interaktif. Kombinasi antara videografi dan coding ini memberikan saya banyak kesempatan untuk terus berkreasi dan berinovasi dalam dunia digital.
 </p>
 <p>
-    I believe that good communication is super important in any job.
+    Saya yakin untuk dapat selalu mengembangkan semua kemampuan yang saya miliki.
 </p>
 <p>
-    I'm good at adapting to different situations, working efficiently, and always trying to do my best. My experience has taught me how to solve problems and lead teams, but I'm also happy to work with others to get things done. I'm excited about the chance to work together and make cool stuff!
+    Setiap saat saya selalu mengeksplor hal-hal baru yang dapat digunakan dalam dunia kerja, saya dapat bekerja dalam tim maupun individu, dan saya mempunyai prinsip komuniasi adalah hal utama dalam dunia kerja.
 </p>
 <p>
-    I'm looking forward to the possibility of working with you!
+    Saya tunggu kerjasamanya dengan Anda!
 </p>
 `;

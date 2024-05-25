@@ -5,9 +5,9 @@ import Container from '@/common/components/elements/Container';
 import PageHeading from '@/common/components/elements/PageHeading';
 import About from '@/modules/about';
 
-const PAGE_TITLE = 'About';
+const PAGE_TITLE = 'Tentang';
 const PAGE_DESCRIPTION =
-  'An insightful glimpse into who I am – because every detail adds depth to the canvas of life.';
+  'Sekilas tentang siapa saya - mengenal dan memahami lebih dekat.';
 
 const AboutPage: NextPage = () => {
   return (

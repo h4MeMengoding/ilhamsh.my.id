@@ -17,7 +17,7 @@ const About = () => {
     {
       label: (
         <TabLabel>
-          <AboutIcon size={17} /> Intro
+          <AboutIcon size={17} /> Perkenalan
         </TabLabel>
       ),
       children: <Story />,
@@ -30,18 +30,18 @@ const About = () => {
       ),
       children: <Resume />,
     },
+    // {
+    //   label: (
+    //     <TabLabel>
+    //       <CareerIcon size={17} /> Career
+    //     </TabLabel>
+    //   ),
+    //   children: <CareerList />,
+    // },
     {
       label: (
         <TabLabel>
-          <CareerIcon size={17} /> Career
-        </TabLabel>
-      ),
-      children: <CareerList />,
-    },
-    {
-      label: (
-        <TabLabel>
-          <EducationIcon size={17} /> Education
+          <EducationIcon size={17} /> Pendidikan
         </TabLabel>
       ),
       children: <EducationList />,

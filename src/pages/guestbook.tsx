@@ -5,9 +5,9 @@ import Container from '@/common/components/elements/Container';
 import PageHeading from '@/common/components/elements/PageHeading';
 import Chat from '@/modules/chat';
 
-const PAGE_TITLE = 'Guestbook';
+const PAGE_TITLE = 'Buku Tamu';
 const PAGE_DESCRIPTION =
-  'Leave whatever you like to say, suggestions, questions or anything!';
+  'Tinggalkan pesan untuk saya, katakan apa yang ingin kamu katakan!';
 
 const GuestBookPage: NextPage = () => {
   return (

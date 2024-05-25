@@ -107,7 +107,7 @@ const BlogListNew = () => {
               </div>
             ) : (
               <h4 className='text-neutral-800 dark:text-neutral-200'>
-                Latest Articles
+                Artikel Terbaru
               </h4>
             )}
             <span className='rounded-full bg-neutral-300 px-2 py-1  text-xs text-neutral-900 dark:bg-neutral-700 dark:text-neutral-50'>

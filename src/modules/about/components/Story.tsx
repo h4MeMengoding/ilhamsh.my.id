@@ -10,12 +10,12 @@ const Story = () => {
       />
 
       <div className='space-y-4'>
-        <span>Best Regards,</span>
+        <span>Hormat Saya,</span>
         <Image
-          src='/images/signature.png'
+          src='/images/ttd2.png'
           width={150}
           height={150}
-          alt='Aulianza'
+          alt='Ilham'
         />
       </div>
     </div>
