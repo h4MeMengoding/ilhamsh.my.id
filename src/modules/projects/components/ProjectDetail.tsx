@@ -21,7 +21,7 @@ const ProjectDetail = ({
       <div className='flex flex-col items-start justify-between gap-5 sm:flex-row lg:flex-row lg:items-center'>
         <div className='flex flex-wrap items-center gap-2'>
           <span className='mb-1 text-[15px] text-neutral-700 dark:text-neutral-300'>
-            Tech Stack :
+            Software/Tech Stack :
           </span>
           <div className='flex flex-wrap items-center gap-3'>
             {stacksArray?.map((stack: string, index: number) => (

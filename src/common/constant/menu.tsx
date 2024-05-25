@@ -68,15 +68,15 @@ export const MENU_ITEMS: MenuItemProps[] = [
     eventName: 'Pages: Learn',
     type: 'Pages',
   },
-  {
-    title: 'About',
-    href: '/about',
-    icon: <ProfileIcon size={iconSize} />,
-    isShow: true,
-    isExternal: false,
-    eventName: 'Pages: About',
-    type: 'Pages',
-  },
+  // {
+  //   title: 'About',
+  //   href: '/about',
+  //   icon: <ProfileIcon size={iconSize} />,
+  //   isShow: true,
+  //   isExternal: false,
+  //   eventName: 'Pages: About',
+  //   type: 'Pages',
+  // },
   {
     title: 'Contact',
     href: '/contact',
@@ -112,7 +112,7 @@ export const MENU_APPS: MenuItemProps[] = [
 export const SOCIAL_MEDIA: MenuItemProps[] = [
   {
     title: 'Email',
-    href: 'mailto:aulianza.dev@gmail.com',
+    href: 'mailto:ilhamshofaa@gmail.com',
     icon: <EmailIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -123,7 +123,7 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
 
   {
     title: 'Linkedin',
-    href: 'https://www.linkedin.com/in/aulianza/',
+    href: 'https://www.linkedin.com/in/ilhamshofa/',
     icon: <LinkedinIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -133,7 +133,7 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
   },
   {
     title: 'Twitter',
-    href: 'https://twitter.com/aulianzaa',
+    href: 'https://twitter.com/ilhamontwt',
     icon: <TwitterIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -143,7 +143,7 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
   },
   {
     title: 'Instagram',
-    href: 'https://instagram.com/aulianza',
+    href: 'https://instagram.com/ilham.shff',
     icon: <InstagramIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -153,7 +153,7 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
   },
   {
     title: 'Github',
-    href: 'https://github.com/aulianza',
+    href: 'https://github.com/h4MeMengoding',
     icon: <GithubIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -166,7 +166,7 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
 export const EXTERNAL_LINKS: MenuItemProps[] = [
   {
     title: 'Analytics',
-    href: 'https://analytics.aulianza.com/share/LK5kiRuosw9pORLa/aulianza.id',
+    href: 'https://cloud.umami.is/share/Ryk62sCTJFTiESes/hame.my.id',
     icon: <AnalyticsIcon size={iconSize} />,
     isShow: true,
     isExternal: true,

@@ -7,8 +7,8 @@ export default function Document() {
         <script
           async
           defer
-          src='https://analytics.aulianza.com/script.js'
-          data-website-id='5a78190a-bdad-48a4-901a-c7400be41ca6'
+          src='https://cloud.umami.is/script.js'
+          data-website-id='18fb2950-2f85-4825-b0e7-0086b7735eaf'
         ></script>
         <link
           rel='apple-touch-icon'

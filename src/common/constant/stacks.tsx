@@ -1,5 +1,6 @@
 import { BsFillBootstrapFill, BsRobot } from 'react-icons/bs';
 import {
+  SiAdobe,
   SiAngular,
   SiApollographql,
   SiCss3,
@@ -30,6 +31,8 @@ import {
   SiVuedotjs,
   SiWebpack,
   SiWordpress,
+  SiAdobeaudition,
+  SiAdobepremierepro
 } from 'react-icons/si';
 
 export type stacksProps = {
@@ -70,11 +73,7 @@ export const STACKS: stacksProps = {
     <SiStyledcomponents size={iconSize} className='text-pink-500' />
   ),
   PWA: <SiPwa size={iconSize} className='text-amber-600' />,
-  Nginx: <SiNginx size={iconSize} className='text-green-500' />,
-  Jest: <SiJest size={iconSize} className='text-red-600' />,
-  Storybook: <SiStorybook size={iconSize} className='text-amber-500' />,
-  CSS: <SiCss3 size={iconSize} className='text-blue-300' />,
-  Socket: <SiSocketdotio size={iconSize} />,
-  Express: <SiExpress size={iconSize} />,
-  Jquery: <SiJquery size={iconSize} />,
+  Adobe: <SiAdobe size={iconSize} />,
+  AdobeAudition: <SiAdobeaudition size={iconSize} />,
+  AdobePremierePro : <SiAdobepremierepro size={iconSize} />
 };
