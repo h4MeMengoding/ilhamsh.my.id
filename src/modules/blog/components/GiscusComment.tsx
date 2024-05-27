@@ -11,16 +11,16 @@ const GiscusComment = ({ isEnableReaction = false }: GiscusComment) => {
   return (
     <div className='mb-2 mt-5'>
       <Giscus
-        repo='aulianza/aulianza.id'
-        repoId='R_kgDOJoIhfQ'
+        repo='h4MeMengoding/hame.my.id'
+        repoId='R_kgDOMATNKQ'
         category='General'
-        categoryId='DIC_kwDOJoIhfc4CW6cJ'
+        categoryId='DIC_kwDOMATNKc4CfoM4'
         mapping='pathname'
         reactionsEnabled={isEnableReaction ? '1' : '0'}
         emitMetadata='1'
         inputPosition='top'
         theme={theme === 'dark' ? 'transparent_dark' : 'light'}
-        lang='en'
+        lang='id'
         loading='lazy'
       />
     </div>

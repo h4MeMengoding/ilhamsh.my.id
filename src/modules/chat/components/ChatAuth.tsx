@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import { signIn } from 'next-auth/react';
-import { BsGithub as GithubIcon } from 'react-icons/bs';
 import { FcGoogle as GoogleIcon } from 'react-icons/fc';
 
 import Button from '@/common/components/elements/Button';
@@ -12,13 +11,6 @@ const Providers = [
     bgColor: '!bg-white',
     textColor: 'text-black',
     label: 'Sign in with Google',
-  },
-  {
-    id: 'github',
-    icon: <GithubIcon size={18} />,
-    bgColor: '!bg-black',
-    textColor: 'text-white',
-    label: 'Sign in with Github',
   },
 ];
 
