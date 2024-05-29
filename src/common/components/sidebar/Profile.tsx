@@ -9,6 +9,7 @@ import MobileMenu from './MobileMenu';
 import MobileMenuButton from './MobileMenuButton';
 import ProfileHeader from './ProfileHeader';
 import SearchBox from '../elements/SearchBox';
+import Status from '../elements/Status';
 import ThemeToggleButton from '../elements/ThemeToggleButton';
 
 interface ProfileProps {
@@ -56,12 +57,19 @@ const Profile = ({ isScrolled = false }: ProfileProps) => {
           <ProfileHeader expandMenu={expandMenu} imageSize={getImageSize()} />
           {/* <ProfileHeader expandMenu={expandMenu} imageSize={55} /> */}
 
+          {!isMobile && (
+            <div className='flex items-center w-full justify-between'>
+              <Status />
+              <ThemeToggleButton />
+            </div>
+          )}
+
           {isMobile && (
             <div
               className={clsx(
-                'mt-2 flex items-center gap-5 lg:hidden',
+                'flex lg:hidden items-center gap-5 mt-2',
                 expandMenu &&
-                  'h-[120px] flex-col-reverse !items-end justify-between pb-1',
+                '!items-end flex-col-reverse justify-between h-[120px] pb-1'
               )}
             >
               <ThemeToggleButton />
@@ -78,6 +86,7 @@ const Profile = ({ isScrolled = false }: ProfileProps) => {
             {expandMenu && (
               <div className='space-y-5 pt-6'>
                 <SearchBox />
+                <Status />
                 <MobileMenu />
               </div>
             )}

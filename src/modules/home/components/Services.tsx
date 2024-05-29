@@ -11,7 +11,7 @@ const Services = () => {
       <div className='space-y-3'>
         <SectionHeading title="Mengenal Saya Lebih Banyak" />
         <p className='leading-[1.8] text-neutral-800 dark:text-neutral-300 md:leading-loose'>
-        Saya mengundang Anda untuk lebih mengenal saya dengan lebih dalam, seperti halnya buku 
+        Saya mengajak Anda untuk lebih mengenal saya dengan lebih dalam, seperti halnya buku 
         yang menanti untuk dibuka, cerita yang menunggu untuk diceritakan, dan petualangan 
         yang menantikan untuk dijelajahi bersama
         </p>
