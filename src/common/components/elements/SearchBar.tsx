@@ -20,7 +20,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
         />
         <input
           type='text'
-          placeholder='Search...'
+          placeholder='Cari...'
           className='w-full rounded-lg border-2 px-10 py-2  text-sm transition-all duration-300 dark:border-neutral-600'
           value={searchTerm}
           onChange={onSearchChange}

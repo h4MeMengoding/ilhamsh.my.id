@@ -24,12 +24,12 @@ const Contributions = ({ username, endpoint }: ContributionsProps) => {
   return (
     <section className='flex flex-col gap-y-2'>
       <SectionHeading
-        title='Contributions'
+        title='Kontribusi'
         icon={<GithubIcon className='mr-1' />}
       />
       <SectionSubHeading>
         <p className='dark:text-neutral-400'>
-          My contributions from last year on github.
+          Kontribusi saya dari tahun lalu di github.
         </p>
         <Link
           href={`https://github.com/${username}`}

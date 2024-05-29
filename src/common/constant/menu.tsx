@@ -17,6 +17,7 @@ import {
 } from 'react-icons/fi';
 import { PiChatCircleDotsBold as ChatIcon } from 'react-icons/pi';
 import { SiJavascript } from 'react-icons/si';
+import { HiStatusOnline as StatusIcon } from "react-icons/hi";
 
 import { MenuItemProps } from '../types/menu';
 
@@ -93,6 +94,15 @@ export const MENU_ITEMS: MenuItemProps[] = [
     isShow: true,
     isExternal: false,
     eventName: 'Pages: Chat',
+    type: 'Pages',
+  },
+  {
+    title: 'Status',
+    href: '/status',
+    icon: <StatusIcon size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: Status',
     type: 'Pages',
   },
 ];

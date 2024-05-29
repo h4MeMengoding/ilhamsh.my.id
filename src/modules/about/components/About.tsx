@@ -1,13 +1,13 @@
 import {
   HiOutlineAcademicCap as EducationIcon,
   HiOutlineBookmark as AboutIcon,
-  HiOutlineBriefcase as CareerIcon,
+  // HiOutlineBriefcase as CareerIcon,
   HiOutlineDocumentText as ResumeIcon,
 } from 'react-icons/hi';
 
 import { Tabs } from '@/common/components/elements/Tabs';
 
-import CareerList from './CareerList';
+// import CareerList from './CareerList';
 import EducationList from './EducationList';
 import Resume from './Resume';
 import Story from './Story';

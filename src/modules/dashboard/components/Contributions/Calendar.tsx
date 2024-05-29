@@ -117,7 +117,7 @@ const Calendar = ({ data }: CalendarProps) => {
 
       <div className='flex flex-wrap items-center justify-between gap-2'>
         <div className='flex items-center gap-2 text-sm'>
-          <span className='dark:text-neutral-400'>Less</span>
+          <span className='dark:text-neutral-400'>Sedikit</span>
           <ul className='flex gap-1'>
             <motion.li className='h-[10px] w-[10px] rounded-sm bg-neutral-300 dark:bg-neutral-800' />
             {contributionColors.map((item, index) => (
@@ -137,7 +137,7 @@ const Calendar = ({ data }: CalendarProps) => {
               />
             ))}
           </ul>
-          <span>More</span>
+          <span>Banyak</span>
         </div>
 
         <div

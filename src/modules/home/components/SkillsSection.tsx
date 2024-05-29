@@ -5,7 +5,7 @@ const SkillsSection = () => {
   return (
     <section className='space-y-5'>
       <div className='space-y-3'>
-        <SectionHeading title='Alat Yang Saya Gunakan' />
+        <SectionHeading title='Software/Posisi' />
       </div>
       <Skills />
     </section>
