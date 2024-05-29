@@ -1,6 +1,11 @@
-import { BsFillBootstrapFill, BsRobot } from 'react-icons/bs';
+import { BsFillBootstrapFill } from 'react-icons/bs';
 import {
   SiAdobe,
+  SiAdobeaftereffects,
+  SiAdobeaudition,
+  SiAdobephotoshop,
+  SiAdobepremierepro,
+  SiCanva,
   SiFirebase,
   SiJavascript,
   SiLaravel,
@@ -13,13 +18,10 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVuedotjs,
-  SiWordpress,
-  SiAdobeaudition,
-  SiAdobepremierepro,
-  SiAdobeaftereffects,
-  SiAdobephotoshop,
-  SiCanva,
-} from 'react-icons/si';
+  SiWordpress} from 'react-icons/si';
+import {
+  BsCamera2
+} from 'react-icons/bs'
 
 export type stacksProps = {
   [key: string]: JSX.Element;
@@ -57,5 +59,8 @@ export const STACKS: stacksProps = {
   ),
   'Adobe Photoshop': (
     <SiAdobephotoshop size={iconSize} />
+  ),
+  'Director of Photography': (
+    <BsCamera2 size={iconSize} />
   ),
 };

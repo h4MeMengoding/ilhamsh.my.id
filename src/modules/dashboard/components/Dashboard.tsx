@@ -3,6 +3,7 @@ import { GITHUB_ACCOUNTS } from '@/common/constant/github';
 
 import CodingActive from './CodingActive';
 import Contributions from './Contributions';
+import SpoLast from './SpotifyLastPlayed';
 
 const Dashboard = () => {
   return (
@@ -21,6 +22,8 @@ const Dashboard = () => {
           ),
         )}
       </div>
+      <Breakline className='mb-8 mt-10' />
+      <SpoLast />
     </>
   );
 };
