@@ -18,7 +18,6 @@ import {
 import { HiStatusOnline as StatusIcon } from 'react-icons/hi';
 import { PiChatCircleDotsBold as ChatIcon } from 'react-icons/pi';
 import { SiJavascript } from 'react-icons/si';
-
 import { SiBetterstack } from 'react-icons/si';
 
 import { MenuItemProps } from '../types/menu';

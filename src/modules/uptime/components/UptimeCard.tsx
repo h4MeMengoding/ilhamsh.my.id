@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
+
 import 'react-loading-skeleton/dist/skeleton.css';
+
 import SkeletonLoader from '@/common/components/elements/SkeletonLoader';
 
 const UptimeCard = () => {

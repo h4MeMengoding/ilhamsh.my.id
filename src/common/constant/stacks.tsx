@@ -1,4 +1,5 @@
 import { BsFillBootstrapFill } from 'react-icons/bs';
+import { BsCamera2 } from 'react-icons/bs';
 import {
   SiAdobe,
   SiAdobeaftereffects,
@@ -18,10 +19,8 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVuedotjs,
-  SiWordpress} from 'react-icons/si';
-import {
-  BsCamera2
-} from 'react-icons/bs'
+  SiWordpress,
+} from 'react-icons/si';
 
 export type stacksProps = {
   [key: string]: JSX.Element;
@@ -48,19 +47,9 @@ export const STACKS: stacksProps = {
   'Node.js': <SiNodedotjs size={iconSize} className='text-green-600' />,
   Adobe: <SiAdobe size={iconSize} />,
   Canva: <SiCanva size={iconSize} className='text-sky-400' />,
-  'Adobe Premiere Pro': (
-    <SiAdobepremierepro size={iconSize} />
-  ),
-  'Adobe Audition': (
-    <SiAdobeaudition size={iconSize} />
-  ),
-  'Adobe After Effects': (
-    <SiAdobeaftereffects size={iconSize} />
-  ),
-  'Adobe Photoshop': (
-    <SiAdobephotoshop size={iconSize} />
-  ),
-  'Director of Photography': (
-    <BsCamera2 size={iconSize} />
-  ),
+  'Adobe Premiere Pro': <SiAdobepremierepro size={iconSize} />,
+  'Adobe Audition': <SiAdobeaudition size={iconSize} />,
+  'Adobe After Effects': <SiAdobeaftereffects size={iconSize} />,
+  'Adobe Photoshop': <SiAdobephotoshop size={iconSize} />,
+  'Director of Photography': <BsCamera2 size={iconSize} />,
 };
