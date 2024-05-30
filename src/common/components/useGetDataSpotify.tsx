@@ -1,17 +1,43 @@
 import useSWR from "swr";
 
-export function useGetDataSpotify() {
-  const fetcher = (url) =>
-    fetch(url).then(async (res) => {
-      if (res.ok) return res.json();
-      else return Promise.reject(await res.json());
-    });
+// Define the interfaces
+interface Artist {
+  href: string;
+  name: string;
+}
 
-  const { data, error, isLoading } = useSWR("/api/spotify", fetcher);
+interface Data {
+  currentlyPlaying: boolean;
+  albumArt: {
+    url: string;
+  };
+  href: string;
+  name: string;
+  artists: Artist[];
+  playlistHref: string;
+  playlistName: string;
+}
+
+interface FetcherError {
+  message: string;
+}
+
+const fetcher = async (url: string): Promise<Data> => {
+  const res = await fetch(url);
+  if (res.ok) {
+    return res.json();
+  } else {
+    const errorData: FetcherError = await res.json();
+    throw new Error(errorData.message);
+  }
+};
+
+export function useGetDataSpotify() {
+  const { data, error } = useSWR<Data>("/api/spotify", fetcher);
 
   return {
     data,
-    isLoading,
+    isLoading: !error && !data,
     error,
   };
 }

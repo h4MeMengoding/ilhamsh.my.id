@@ -11,7 +11,7 @@ export default function Spotify() {
       <div className="space-y-2">
         <SectionHeading title="Spotify" icon={<BiLogoSpotify size={24} />} />
         <SectionSubHeading>
-          <p>Diambil secara realtime dengan API dari Spotify</p>
+          <p>Diambil secara realtime dengan API dari</p>
         </SectionSubHeading>
       </div>
       <SpotifyCard />
