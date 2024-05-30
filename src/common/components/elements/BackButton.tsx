@@ -24,7 +24,7 @@ const BackButton = ({ url }: BackButtonProps) => {
     return (
       <>
         <BackButtonIcon size={20} data-testid='back-icon' />
-        <span>Back</span>
+        <span>Kembali</span>
       </>
     );
   };

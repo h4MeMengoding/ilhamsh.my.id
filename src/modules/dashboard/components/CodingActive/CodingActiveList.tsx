@@ -55,7 +55,7 @@ const CodingActiveList = ({ data }: CodingActiveListProps) => {
 
   const actives = [
     {
-      title: 'Languages',
+      title: 'Program',
       total: getLanguagesTotalTimeDisplay,
       data: data?.languages,
       styles: {
@@ -63,7 +63,7 @@ const CodingActiveList = ({ data }: CodingActiveListProps) => {
       },
     },
     {
-      title: 'Categories',
+      title: 'Kategori',
       total: getEditorTotalTimeDisplay,
       data: data?.categories,
       styles: {

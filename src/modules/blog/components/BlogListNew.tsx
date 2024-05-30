@@ -88,7 +88,13 @@ const BlogListNew = () => {
   const renderEmptyState = () =>
     !isValidating &&
     (!data?.status || blogData.length === 0) && (
-      <EmptyState message={error ? 'Error loading posts' : 'Tidak ada artikel.'} />
+      <EmptyState
+        message={
+          error
+            ? 'Error loading posts'
+            : 'Tidak ada artikel. Gagal mendapatkan API Wordpress'
+        }
+      />
     );
 
   return (

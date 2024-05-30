@@ -40,7 +40,7 @@ const BlogDetail = ({
       </div>
       {tagList?.length >= 1 && (
         <div className='my-10 space-y-2'>
-          <h6 className='text-lg font-medium'>Tags:</h6>
+          <h6 className='text-lg font-medium'>Tag:</h6>
           <div className='flex flex-wrap gap-2 pt-2'>
             {tagList?.map((tag) => (
               <div

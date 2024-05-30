@@ -70,7 +70,7 @@ const AiResponses = ({
             data-umami-event='Click Back from AI Response'
           >
             <BackButton />
-            Back
+            Kembali
           </Button>
         </div>
       )}

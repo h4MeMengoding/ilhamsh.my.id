@@ -1,15 +1,21 @@
-import { getAccessToken, getCurrentTrack, getLastPlayedTrack, getTrack } from "@/common/libs/spotify";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import {
+  getAccessToken,
+  getCurrentTrack,
+  getLastPlayedTrack,
+  getTrack,
+} from '@/common/libs/spotify';
 
 export const config = {
-  runtime: "edge",
+  runtime: 'edge',
 };
 
 export default async function handler() {
   const accessToken = await getAccessToken();
   if (!accessToken) {
     return new Response(
-      JSON.stringify({ error: "Error fetching access_token from Spotify" }),
-      { status: 500, headers: { "Content-Type": "application/json" } }
+      JSON.stringify({ error: 'Error fetching access_token from Spotify' }),
+      { status: 500, headers: { 'Content-Type': 'application/json' } },
     );
   }
 
@@ -32,7 +38,7 @@ export default async function handler() {
       };
       return new Response(JSON.stringify(responsePayload), {
         status: 200,
-        headers: { "Content-Type": "application/json" },
+        headers: { 'Content-Type': 'application/json' },
       });
     }
   }
@@ -52,12 +58,12 @@ export default async function handler() {
     };
     return new Response(JSON.stringify(responsePayload), {
       status: 200,
-      headers: { "Content-Type": "application/json" },
+      headers: { 'Content-Type': 'application/json' },
     });
   }
 
   return new Response(
-    JSON.stringify({ error: "Error fetching data from Spotify" }),
-    { status: 500, headers: { "Content-Type": "application/json" } }
+    JSON.stringify({ error: 'Error fetching data from Spotify' }),
+    { status: 500, headers: { 'Content-Type': 'application/json' } },
   );
 }
