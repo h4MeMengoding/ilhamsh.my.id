@@ -10,12 +10,13 @@ const BlogPreview = () => {
   return (
     <section className='space-y-6'>
       <div className='flex items-center justify-between'>
-        <SectionHeading title='Artikel Terbaru' className='ml-1' />
+        <SectionHeading title='Artikel Terbaru' />
         <SectionSubHeading>
           <Link href='/blog'>
             <div className='mt-1 flex cursor-pointer gap-1 text-sm text-neutral-700 transition-all duration-300 hover:gap-3 hover:text-neutral-700 dark:text-neutral-400 hover:dark:text-neutral-300'>
               <div className='flex'>
-                Lihat Semua <span className='ml-1 hidden sm:block'>Artikel</span>
+                Lihat Semua{' '}
+                <span className='ml-1 hidden sm:block'>Artikel</span>
               </div>
               <ViewAllIcon size={22} />
             </div>

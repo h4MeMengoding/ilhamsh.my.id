@@ -15,9 +15,11 @@ import {
   FiRss as BlogIcon,
   FiUser as ProfileIcon,
 } from 'react-icons/fi';
+import { HiStatusOnline as StatusIcon } from 'react-icons/hi';
 import { PiChatCircleDotsBold as ChatIcon } from 'react-icons/pi';
 import { SiJavascript } from 'react-icons/si';
-import { HiStatusOnline as StatusIcon } from "react-icons/hi";
+
+import { SiBetterstack } from 'react-icons/si';
 
 import { MenuItemProps } from '../types/menu';
 
@@ -52,7 +54,7 @@ export const MENU_ITEMS: MenuItemProps[] = [
     type: 'Pages',
   },
   {
-    title: 'Blog',
+    title: 'Artikel',
     href: '/blog',
     icon: <BlogIcon size={iconSize} />,
     isShow: true,
@@ -64,7 +66,7 @@ export const MENU_ITEMS: MenuItemProps[] = [
     title: 'Buku',
     href: '/learn',
     icon: <LearnIcon size={iconSize} />,
-    isShow: true,
+    isShow: false,
     isExternal: false,
     eventName: 'Pages: Learn',
     type: 'Pages',
@@ -112,7 +114,7 @@ export const MENU_APPS: MenuItemProps[] = [
     title: 'Taman JS',
     href: '/playground',
     icon: <SiJavascript size={iconSize} />,
-    isShow: true,
+    isShow: false,
     isExternal: false,
     eventName: 'Pages: Playground',
     type: 'Pages',
@@ -175,12 +177,21 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
 
 export const EXTERNAL_LINKS: MenuItemProps[] = [
   {
-    title: 'Analytics',
+    title: 'Analitik',
     href: 'https://cloud.umami.is/share/Ryk62sCTJFTiESes/hame.my.id',
     icon: <AnalyticsIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
     eventName: 'External Link: Analytics',
+    type: 'Link',
+  },
+  {
+    title: 'Uptime',
+    href: 'https://status.hame.my.id',
+    icon: <SiBetterstack size={iconSize} />,
+    isShow: true,
+    isExternal: true,
+    eventName: 'External Link: Uptime',
     type: 'Link',
   },
 ];

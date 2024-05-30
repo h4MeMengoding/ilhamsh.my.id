@@ -1,5 +1,5 @@
 const canonicalUrl = 'https://hame.my.id';
-const metaImage = 'https://cloud.hameresource.my.id/index.php/core/preview?fileId=212&x=1926&y=923&a=true&etag=398e8624a0c953a96fd5eb81a89e1003';
+const metaImage = 'https://i.imgur.com/xLmYv6C.png';
 const metaDescription =
   'Someone who likes playing with cameras and making videos, alternating coding with self-study';
 

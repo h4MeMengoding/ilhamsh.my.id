@@ -62,6 +62,7 @@ const NowPlayingCard = ({ isExpand = false }: { isExpand?: boolean }) => {
               className='flex flex-col pt-0.5 hover:cursor-pointer hover:underline'
               onClick={() => handleOpenSongUrl(data?.songUrl)}
             >
+              <div className='text-sm font-bold'>Sedang Mendengarkan :</div>
               <div className='text-sm font-medium'>{trimmedSongTitle}</div>
               <div className='flex items-center gap-2 text-xs'>
                 <AnimatedBars />

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import clsx from 'clsx';
+import { Alert } from 'flowbite-react';
 import { useState } from 'react';
 import { FiClock as ClockIcon } from 'react-icons/fi';
 
@@ -19,9 +20,10 @@ const formInitialState: FormDataProps = {
 
 const ContactForm = () => {
   const [formData, setFormData] = useState<FormDataProps>(formInitialState);
-
   const [formErrors, setFormErrors] = useState<Partial<FormDataProps>>({});
   const [isLoading, setIsLoading] = useState(false);
+  const [alertMessage, setAlertMessage] = useState<string | null>(null);
+  const [alertVisible, setAlertVisible] = useState<boolean>(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -47,16 +49,19 @@ const ContactForm = () => {
       try {
         const response = await axios.post('/api/contact', { formData });
         if (response.status === 200) {
-          alert('Message sent!');
+          setAlertMessage('Sukses - Pesan terkirim');
           setFormData(formInitialState);
         }
       } catch (error) {
-        alert(error);
+        setAlertMessage('Gagal - Failed to send message. Please try again.');
+      } finally {
+        setIsLoading(false);
       }
-      setIsLoading(false);
     } else {
-      alert('Error!');
+      setAlertMessage('Please correct the errors in the form.');
     }
+
+    setAlertVisible(true);
   };
 
   const isSubmitDisabled = Object.values(formErrors).some((error) => error);
@@ -68,7 +73,7 @@ const ContactForm = () => {
           <input
             className='w-full rounded-md border border-neutral-200 px-3 py-2 focus:outline-none dark:border-neutral-700'
             type='text'
-            placeholder='Name*'
+            placeholder='Nama*'
             name='name'
             value={formData.name}
             onChange={handleChange}
@@ -87,7 +92,7 @@ const ContactForm = () => {
         <textarea
           className='w-full rounded-md border border-neutral-200 px-3 py-2 focus:outline-none dark:border-neutral-700'
           rows={5}
-          placeholder='Message*'
+          placeholder='Pesan*'
           name='message'
           value={formData.message}
           onChange={handleChange}
@@ -102,15 +107,20 @@ const ContactForm = () => {
           data-umami-event='Send Contact Message'
           disabled={isSubmitDisabled}
         >
-          {isLoading ? 'Sending Message...' : 'Send Message'}
+          {isLoading ? 'Mengirim Pesan...' : 'Kirim Pesan'}
         </Button>
       </div>
-
+      {alertVisible && alertMessage && (
+        <Alert color='info'>
+          <span className='font-medium'></span>
+          {alertMessage}
+        </Alert>
+      )}
       <div className='my-5 flex items-center gap-2 dark:text-neutral-400'>
         <ClockIcon />
         <div className='text-sm'>
-          <span className='font-medium'>Avg. response:</span> 1-2 Hours (Working
-          Hours, GMT+7)
+          <span className='font-medium'>Perkiraan merespon:</span> 1-2 Jam
+          (Waktu Kerja)
         </div>
       </div>
     </form>

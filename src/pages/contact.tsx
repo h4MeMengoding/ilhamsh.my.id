@@ -5,9 +5,9 @@ import Container from '@/common/components/elements/Container';
 import PageHeading from '@/common/components/elements/PageHeading';
 import Contact from '@/modules/contact';
 
-const PAGE_TITLE = 'Contact';
+const PAGE_TITLE = 'Kontak';
 const PAGE_DESCRIPTION =
-  "Feel free to get in touch and let's have a discussion about how we can work together.";
+  'Seperti halnya buku yang menanti untuk dibuka, cerita yang menunggu untuk diceritakan, dan petualangan yang menantikan untuk dijelajahi bersama.';
 
 const ContactPage: NextPage = () => {
   return (
