@@ -1,7 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
-import { BiLogoSpotify } from "react-icons/bi";
-import { useGetDataSpotify } from "../useGetDataSpotify";
+import Image from 'next/image';
+import Link from 'next/link';
+import { BiLogoSpotify } from 'react-icons/bi';
+
+import { useGetDataSpotify } from '../useGetDataSpotify';
 
 // Define the interfaces
 interface Artist {
@@ -9,6 +10,7 @@ interface Artist {
   name: string;
 }
 
+// eslint-disable-next-line unused-imports/no-unused-vars
 interface Data {
   currentlyPlaying: boolean;
   albumArt: {
@@ -22,27 +24,28 @@ interface Data {
 }
 
 const SpotifyCard: React.FC = (): JSX.Element | null => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { data, error, isLoading } = useGetDataSpotify();
 
   if (isLoading || error) {
     return (
-      <div className="w-full flex bg-neutral-100 dark:bg-neutral-800 rounded-2xl p-4 items-center">
-        <div className="relative w-full">
-          <div className="flex items-center gap-8">
-            <div className="w-[75px] h-[75px] overflow-hidden rounded-lg sm:w-[100px] sm:h-[100px] bg-neutral-300 dark:bg-neutral-700 animate-pulse"></div>
-            <div className="flex flex-col items-start gap-1 md:gap-3">
-              <div className="w-[178px] rounded h-4 bg-neutral-300 dark:bg-neutral-700 animate-pulse"></div>
-              <div className="w-[187px] rounded h-5 bg-neutral-300 dark:bg-neutral-700 animate-pulse"></div>
-              <div className="w-[143px] rounded h-4 bg-neutral-300 dark:bg-neutral-700 animate-pulse"></div>
+      <div className='flex w-full items-center rounded-2xl bg-neutral-100 p-4 dark:bg-neutral-800'>
+        <div className='relative w-full'>
+          <div className='flex items-center gap-8'>
+            <div className='h-[75px] w-[75px] animate-pulse overflow-hidden rounded-lg bg-neutral-300 dark:bg-neutral-700 sm:h-[100px] sm:w-[100px]'></div>
+            <div className='flex flex-col items-start gap-1 md:gap-3'>
+              <div className='h-4 w-[178px] animate-pulse rounded bg-neutral-300 dark:bg-neutral-700'></div>
+              <div className='h-5 w-[187px] animate-pulse rounded bg-neutral-300 dark:bg-neutral-700'></div>
+              <div className='h-4 w-[143px] animate-pulse rounded bg-neutral-300 dark:bg-neutral-700'></div>
             </div>
           </div>
           <Link
-            href="https://spotify.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute top-0 right-0 "
+            href='https://spotify.com'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='absolute right-0 top-0'
           >
-            <BiLogoSpotify className="md:w-8 md:h-8 h-5 w-5" />
+            <BiLogoSpotify className='h-5 w-5 md:h-8 md:w-8' />
           </Link>
         </div>
       </div>
@@ -51,46 +54,48 @@ const SpotifyCard: React.FC = (): JSX.Element | null => {
 
   if (data) {
     return (
-      <div className="w-full flex bg-neutral-100 dark:bg-neutral-800 rounded-xl p-4 flex-col ">
-        <div className="w-full mb-2 relative">
-          <h1 className="text-md md:text-lg font-bold ">
-            {data.currentlyPlaying ? "MENDENGARKAN SPOTIFY" : "TERAKHIR DIPUTAR"}
+      <div className='flex w-full flex-col rounded-xl bg-neutral-100 p-4 dark:bg-neutral-800'>
+        <div className='relative mb-2 w-full'>
+          <h1 className='text-md font-bold md:text-lg'>
+            {data.currentlyPlaying
+              ? 'MENDENGARKAN SPOTIFY'
+              : 'TERAKHIR DIPUTAR'}
           </h1>
-          <div className="absolute top-0 right-0">
-            <BiLogoSpotify className="md:w-8 md:h-8 w-6 h-6" size={40} />
+          <div className='absolute right-0 top-0'>
+            <BiLogoSpotify className='h-6 w-6 md:h-8 md:w-8' size={40} />
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className='flex gap-4'>
           <Image
-            src={data?.albumArt.url}
-            alt="Album art"
+            src={data.albumArt.url}
+            alt='Album art'
             width={100}
             height={100}
-            className=" rounded-sm"
+            className='rounded-sm'
           />
-          <div className="flex-col flex gap-1 justify-center">
+          <div className='flex flex-col justify-center gap-1'>
             <Link
-              href={data?.href}
-              className=" text-md md:text-lg font-semibold hover:underline "
+              href={data.href}
+              className='text-md font-semibold hover:underline md:text-lg'
             >
               {data.name}
             </Link>
             <p>
-              {data.artists.map((artist: Artist, i: number) => (
+              {data.artists.map((artist, i) => (
                 <Link
                   key={i}
                   href={artist.href}
-                  className="text-sm font-medium hover:underline "
+                  className='text-sm font-medium hover:underline'
                 >
-                  {artist.name + (i < data.artists.length - 1 ? ", " : "")}
+                  {artist.name + (i < data.artists.length - 1 ? ', ' : '')}
                 </Link>
               ))}
             </p>
             <p>
-              Album :{" "}
+              Album:{' '}
               <Link
                 href={data.playlistHref}
-                className="hover:underline text-sm font-medium "
+                className='text-sm font-medium hover:underline'
               >
                 {data.playlistName}
               </Link>
