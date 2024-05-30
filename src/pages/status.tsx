@@ -1,10 +1,11 @@
 import { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
-import Breakline from '@/common/components/elements/Breakline';
 
+import Breakline from '@/common/components/elements/Breakline';
 import Container from '@/common/components/elements/Container';
 import PageHeading from '@/common/components/elements/PageHeading';
 import Status from '@/modules/status';
+import Uptime from '@/modules/uptime';
 
 const PAGE_TITLE = 'Status';
 const PAGE_DESCRIPTION = 'Beberapa status yang tersedia secara realtime';
@@ -17,6 +18,7 @@ const StatusPage: NextPage = () => {
         <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
         <Status />
         <Breakline className='mb-8 mt-10' />
+        <Uptime />
       </Container>
     </>
   );
