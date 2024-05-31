@@ -9,7 +9,7 @@ import BlogFeaturedHero from './BlogFeaturedHero';
 
 const BlogFeaturedSection = () => {
   const { data, isLoading } = useSWR(
-    `/api/blog?page=1&per_page=4&categories=5`,
+    `/api/blog?page=1&per_page=4&categories=11`,
     fetcher,
     {
       revalidateOnFocus: false,
