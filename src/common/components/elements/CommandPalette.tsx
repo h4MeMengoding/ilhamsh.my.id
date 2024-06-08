@@ -49,37 +49,34 @@ const CommandPalette = () => {
   const { resolvedTheme, setTheme } = useTheme();
   const queryDebounce = useDebounce(query, 500);
 
-  const placeholders = [
-    'Search or Ask anything...',
-    'Press Cmd + K anytime to access this command pallete',
-  ];
+  const placeholders = ['Cari...', 'Atau gunakan CTRL + K untuk membuka'];
 
   const placeholder = placeholders[placeholderIndex];
 
   const menuOptions: MenuOptionProps[] = [
     {
-      title: 'PAGES',
+      title: 'HALAMAN',
       children: MENU_ITEMS?.map((menu) => ({
         ...menu,
         closeOnSelect: true,
       })),
     },
     {
-      title: 'SOCIALS',
+      title: 'SOSIAL',
       children: SOCIAL_MEDIA?.map((menu) => ({
         ...menu,
         closeOnSelect: true,
       })),
     },
     {
-      title: 'EXTERNAL LINKS',
+      title: 'LINK',
       children: EXTERNAL_LINKS?.map((menu) => ({
         ...menu,
         closeOnSelect: true,
       })),
     },
     {
-      title: 'APPEARANCE',
+      title: 'TEMA',
       children: [
         {
           icon:
@@ -88,7 +85,7 @@ const CommandPalette = () => {
             ) : (
               <DarkModeIcon size={20} />
             ),
-          title: `Switch to ${
+          title: `Beralih ke  ${
             resolvedTheme === 'dark' ? 'Light' : 'Dark'
           } Mode`,
           click: () => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark'),

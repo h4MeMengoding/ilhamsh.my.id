@@ -16,7 +16,7 @@ const ChatUserInfo = ({ isWidget = false }: { isWidget?: boolean }) => {
       )}
     >
       <div className='flex flex-wrap gap-1 text-neutral-500'>
-        <p>Signed in as</p>
+        <p>Masuk sebagai</p>
         <p className='font-medium'>{userName}</p>
         <p>({userEmail})</p>
       </div>
@@ -29,7 +29,7 @@ const ChatUserInfo = ({ isWidget = false }: { isWidget?: boolean }) => {
             data-umami-event='Sign Out from Chat Page'
           >
             <SignOutIcon size={16} className='cursor-pointer text-red-500' />
-            <span>Sign Out</span>
+            <span>Keluar</span>
           </div>
         </>
       )}

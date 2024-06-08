@@ -54,7 +54,7 @@ const Sidebar = () => {
           <Navigation />
           <div className='space-y-2.5 px-1'>
             <div className='px-3'>
-              <span className='text-sm text-neutral-600'>Theme</span>
+              <span className='text-sm text-neutral-600'>Tema</span>
             </div>
             <ThemeSwitcher />
           </div>

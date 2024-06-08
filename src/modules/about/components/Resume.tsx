@@ -16,7 +16,7 @@ const Resume = () => {
         data-umami-event='Download Resume'
       >
         <DownloadIcon />
-        <span>Download Resume</span>
+        <span>Unduh Resume</span>
       </Link>
 
       <GoogleDocsEmbed src='https://docs.google.com/document/d/1orZCvK2IuTQkrQdgqd1A5_5ARE2PCanx6mm4Q5XuUW8/edit' />

@@ -10,7 +10,7 @@ const Providers = [
     icon: <GoogleIcon size={18} />,
     bgColor: '!bg-white',
     textColor: 'text-black',
-    label: 'Login dengan Google',
+    label: 'Masuk dengan Google',
   },
 ];
 
