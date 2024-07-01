@@ -104,7 +104,7 @@ const ContactForm = () => {
           )}
           type='submit'
           icon={<></>}
-          data-umami-event='Send Contact Message'
+          data-umami-event='Mengirim Pesan Ke Kontak'
           disabled={isSubmitDisabled}
         >
           {isLoading ? 'Mengirim Pesan...' : 'Kirim Pesan'}

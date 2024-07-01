@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { BiCommand as CommandIcon } from 'react-icons/bi';
+import { ImCtrl } from "react-icons/im";
 import { FiSearch } from 'react-icons/fi';
 
 import { CommandPaletteContext } from '@/common/context/CommandPaletteContext';
@@ -19,7 +19,7 @@ const SearchBox = () => {
         Cari
       </span>
       <div className='flex items-center gap-0.5 rounded bg-neutral-200 px-1 py-0.5 text-xs dark:bg-neutral-800'>
-        <CommandIcon className='mt-0.5' />
+        <ImCtrl className='mt-0.5' />
         <span>k</span>
       </div>
     </div>

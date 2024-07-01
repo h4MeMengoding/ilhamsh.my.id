@@ -1,5 +1,5 @@
 import Router from 'next/router';
-import { BiRocket as RocketIcon } from 'react-icons/bi';
+import { TbListDetails } from "react-icons/tb";
 
 import Button from '@/common/components/elements/Button';
 import Card from '@/common/components/elements/Card';
@@ -19,17 +19,17 @@ const Services = () => {
       </div>
       <Card className='space-y-4 rounded-xl border bg-neutral-100 p-8 dark:border-none dark:bg-[#1e1e1e]'>
         <div className='flex items-center gap-2'>
-          <RocketIcon size={24} />
-          <h3 className='text-xl font-medium'>Kenal saya lebih jauh!</h3>
+          <TbListDetails size={24} />
+          <h3 className='text-xl font-medium'>Buka halaman tentang saya!</h3>
         </div>
         <p className='pl-2 leading-[1.8] text-neutral-800 dark:text-neutral-300 md:leading-loose'>
-          Saya terbuka untuk berbincang dan saling mengenal lebih dekat
+          Saya memberikan Resume, Pengalaman, Pendidikan, dan Perkenalan secara detail pada halaman tersebut.
         </p>
         <Button
-          data-umami-event='Click Contact Button'
-          onClick={() => Router.push('/contact')}
+          data-umami-event='Klik Tombol Tentang'
+          onClick={() => Router.push('/about')}
         >
-          Kontak saya
+          Resume
         </Button>
       </Card>
     </section>

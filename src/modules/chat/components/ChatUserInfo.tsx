@@ -26,7 +26,7 @@ const ChatUserInfo = ({ isWidget = false }: { isWidget?: boolean }) => {
           <div
             onClick={() => signOut()}
             className='flex cursor-pointer items-center gap-1 font-medium text-red-500'
-            data-umami-event='Sign Out from Chat Page'
+            data-umami-event='Keluar Dari Halaman Chat'
           >
             <SignOutIcon size={16} className='cursor-pointer text-red-500' />
             <span>Keluar</span>

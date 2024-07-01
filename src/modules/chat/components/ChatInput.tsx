@@ -60,7 +60,7 @@ const ChatInput = ({
             !message.trim() && 'cursor-not-allowed !bg-neutral-600',
           )}
           disabled={isSending || !message.trim()}
-          data-umami-event='Chat Widget: Send Chat'
+          data-umami-event='Widget Obrolan: Kirim Obrolan'
         >
           <SendIcon size={18} />
         </button>

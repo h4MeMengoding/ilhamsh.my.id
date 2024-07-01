@@ -67,7 +67,7 @@ const AiResponses = ({
         <div className='mt-6 flex justify-center transition-all duration-300'>
           <Button
             onClick={onAiClose}
-            data-umami-event='Click Back from AI Response'
+            data-umami-event='Keluar Kembali Dari Menu AI'
           >
             <BackButton />
             Kembali

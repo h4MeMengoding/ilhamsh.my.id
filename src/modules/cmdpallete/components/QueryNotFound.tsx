@@ -32,14 +32,14 @@ const QueryNotFound = ({
         <Button
           onClick={onAskAiAssistant}
           className='justify-center !bg-green-600'
-          data-umami-event='Click Ask AI Assistant'
+          data-umami-event='Klik Tanya Asisten AI'
         >
           <AiIcon size={20} /> Ask AI Assistant
         </Button>
         <Button
           onClick={onFindGoogle}
           className='justify-center !bg-indigo-600'
-          data-umami-event='Click Find in Google'
+          data-umami-event='Klik Temukan di Google'
         >
           <GoogleIcon size={20} />
           Find in Google
