@@ -11,7 +11,7 @@ const Introduction = () => {
             <li>
               Tinggal di Semarang, Jawa Tengah <span className='ml-1'>🇮🇩</span>
             </li>
-            <li>Siap untuk rekrutmen</li>
+            <li>Bersedia untuk rekrutmen</li>
           </ul>
         </div>
       </div>
