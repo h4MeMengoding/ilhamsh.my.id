@@ -58,7 +58,7 @@ const Profile = ({ isScrolled = false }: ProfileProps) => {
           {/* <ProfileHeader expandMenu={expandMenu} imageSize={55} /> */}
 
           {!isMobile && (
-            <div className='flex items-center w-full justify-between'>
+            <div className='flex w-full items-center justify-between'>
               <Status />
               <ThemeToggleButton />
             </div>
@@ -67,9 +67,9 @@ const Profile = ({ isScrolled = false }: ProfileProps) => {
           {isMobile && (
             <div
               className={clsx(
-                'flex lg:hidden items-center gap-5 mt-2',
+                'mt-2 flex items-center gap-5 lg:hidden',
                 expandMenu &&
-                '!items-end flex-col-reverse justify-between h-[120px] pb-1'
+                  'h-[120px] flex-col-reverse !items-end justify-between pb-1',
               )}
             >
               <ThemeToggleButton />

@@ -7,7 +7,6 @@ import { DeviceProps, NowPlayingProps } from '@/common/types/spotify';
 import { fetcher } from '@/services/fetcher';
 
 const SpoLast = () => {
-
   const { data: playingData } = useSWR<NowPlayingProps>(
     '/api/now-playing',
     fetcher,
@@ -31,28 +30,28 @@ const SpoLast = () => {
       <div className='flex justify-between bg-green-400 px-4 pb-0.5 pt-[2.5px] text-[14px] text-neutral-800 dark:bg-green-500 dark:text-neutral-900'>
         {playingData?.songUrl ? (
           <Popover className='relative'>
-              <div className='flex items-center gap-2'>
-                <div className='hidden sm:block '>Sedang mendengarkan :</div>
-                <div className='flex items-center gap-2 transition-all duration-300'>
-                  {playingData?.albumImageUrl && (
-                    <Image
-                      className='rounded-sm'
-                      unoptimized
-                      alt={playingData?.album}
-                      src={playingData?.albumImageUrl}
-                      width={18}
-                      height={18}
-                    />
-                  )}
-                  <div
-                    className='flex gap-1 hover:cursor-pointer hover:underline'
-                    onClick={() => handleOpenSongUrl(playingData?.songUrl)}
-                  >
-                    <span>{playingData?.artist} -</span>
-                    <span>{playingData?.title}</span>
-                  </div>
+            <div className='flex items-center gap-2'>
+              <div className='hidden sm:block '>Sedang mendengarkan :</div>
+              <div className='flex items-center gap-2 transition-all duration-300'>
+                {playingData?.albumImageUrl && (
+                  <Image
+                    className='rounded-sm'
+                    unoptimized
+                    alt={playingData?.album}
+                    src={playingData?.albumImageUrl}
+                    width={18}
+                    height={18}
+                  />
+                )}
+                <div
+                  className='flex gap-1 hover:cursor-pointer hover:underline'
+                  onClick={() => handleOpenSongUrl(playingData?.songUrl)}
+                >
+                  <span>{playingData?.artist} -</span>
+                  <span>{playingData?.title}</span>
                 </div>
               </div>
+            </div>
           </Popover>
         ) : (
           <div className='flex items-center gap-1'>
@@ -63,13 +62,13 @@ const SpoLast = () => {
 
         {playingData?.songUrl && (
           <Popover className='relative'>
-              <div className='flex items-center gap-1'>
-                <SpotifyIcon size={16} className='mr-0.5' />
-                <div>
-                  Listening on{' '}
-                  <span className='font-medium'>{activeDevice?.name}</span>
-                </div>
+            <div className='flex items-center gap-1'>
+              <SpotifyIcon size={16} className='mr-0.5' />
+              <div>
+                Listening on{' '}
+                <span className='font-medium'>{activeDevice?.name}</span>
               </div>
+            </div>
           </Popover>
         )}
       </div>

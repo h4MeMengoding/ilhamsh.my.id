@@ -1,4 +1,5 @@
 import { differenceInMonths, differenceInYears, format } from 'date-fns';
+import { id } from 'date-fns/locale';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 import { BsBuildings as CompanyIcon } from 'react-icons/bs';
@@ -12,23 +13,21 @@ import { CareerProps } from '@/common/types/careers';
 const CareerCard = ({
   position,
   company,
-  company_legal_name,
   logo,
   location,
-  location_type,
   start_date,
   end_date,
-  link,
-  type,
   responsibilities,
 }: CareerProps) => {
   const [isShowResponsibility, setIsShowResponsibility] =
     useState<boolean>(false);
 
-  const startDateFormatted = format(new Date(start_date), 'MMM yyyy');
+  const startDateFormatted = format(new Date(start_date), 'MMM yyyy', {
+    locale: id,
+  });
   const endDateFormatted = end_date
     ? format(new Date(end_date), 'MMM yyyy')
-    : 'Present';
+    : 'Sekarang';
 
   const durationYears = differenceInYears(
     new Date(end_date || Date.now()),
@@ -42,7 +41,7 @@ const CareerCard = ({
       12) +
     1;
 
-  const durationText = `${durationYears > 0 ? `${durationYears} Year${durationYears > 1 ? 's' : ''}, ` : ''}${durationMonths} Month${durationMonths > 1 ? 's' : ''}`;
+  const durationText = `${durationYears > 0 ? `${durationYears} Tahun${durationYears > 1 ? '' : ''}, ` : ''}${durationMonths} Bulan${durationMonths > 1 ? '' : ''}`;
 
   return (
     <Card className='flex gap-5 border border-neutral-300 px-6 py-4 dark:border-neutral-900'>
@@ -61,26 +60,16 @@ const CareerCard = ({
       </div>
       <div className='w-4/5 space-y-3'>
         <div className='space-y-1'>
-          <h6>{position}</h6>
+          <h6 className='font-bold'>{position}</h6>
           <div className='space-y-1 text-sm text-neutral-600 dark:text-neutral-400'>
-            <div className='flex flex-col gap-1 md:flex-row md:items-center md:gap-2'>
-              <a
-                href={link || '#'}
-                target='_blank'
-                data-umami-event={`Click Career Company Name: ${company}`}
-              >
-                <span className='cursor-pointer underline-offset-2 hover:text-dark hover:underline hover:dark:text-white'>
-                  {company}
-                </span>
-              </a>
+            <div className='flex flex-col gap-1 font-bold text-neutral-50 md:flex-row md:items-center md:gap-2'>
+              {company}
               <span className='hidden text-neutral-300 dark:text-neutral-700 lg:block'>
                 •
               </span>
-              <span className='text-neutral-500'>[ {company_legal_name} ]</span>
-              <span className='hidden text-neutral-300 dark:text-neutral-700 lg:block'>
-                •
+              <span className='text-neutral-600 dark:text-neutral-400'>
+                {location}
               </span>
-              <span>{location}</span>
             </div>
             <div className='flex flex-col gap-2 md:flex-row md:text-[13px]'>
               <div className='flex gap-1'>
@@ -94,14 +83,6 @@ const CareerCard = ({
               <span className='text-neutral-500 dark:text-neutral-500'>
                 {durationText}
               </span>
-              <span className='hidden text-neutral-300 dark:text-neutral-700 lg:block'>
-                •
-              </span>
-              <span>{type}</span>
-              <span className='hidden text-neutral-300 dark:text-neutral-700 lg:block'>
-                •
-              </span>
-              <span>{location_type}</span>
             </div>
           </div>
         </div>
@@ -115,7 +96,7 @@ const CareerCard = ({
               'rotate-90 transition-all duration-300': isShowResponsibility,
             })}
           />
-          {isShowResponsibility ? 'Hide' : 'Show'} Responsibilities
+          {isShowResponsibility ? 'Tutup' : 'Tampilkan'} Tanggung Jawab
         </button>
         <AnimatePresence>
           {isShowResponsibility && (

@@ -11,12 +11,7 @@ const Story = () => {
 
       <div className='space-y-4'>
         <span>Hormat Saya,</span>
-        <Image
-          src='/images/ttd2.png'
-          width={150}
-          height={150}
-          alt='Ilham'
-        />
+        <Image src='/images/ttd2.png' width={150} height={150} alt='Ilham' />
       </div>
     </div>
   );
