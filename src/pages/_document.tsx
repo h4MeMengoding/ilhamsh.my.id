@@ -34,6 +34,7 @@ export default function Document() {
           color='#121212'
         />
         <meta name='theme-color' content='#121212' />
+        <meta name="google-site-verification" content="XyIRwcF70qvInoOXmDaZRRGpQMUBd20GFkcXfO1-Tqk" />
       </Head>
       <body>
         <Main />
