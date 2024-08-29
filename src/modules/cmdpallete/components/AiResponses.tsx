@@ -41,17 +41,15 @@ const AiResponses = ({
         <Typewriter
           onInit={(typewriter) => {
             typewriter
-              .typeString(
-                'Oops! The AI seems to be lost. \u00A0 😵‍💫 \u00A0\u00A0',
-              )
+              .typeString('Ups! AI sepertinya hilang. \u00A0 😵‍💫 \u00A0\u00A0')
               .pauseFor(1000)
               .typeString('<br/><br/>')
               .typeString(
-                `Looks like the AI has gone on an unscheduled vacation to the Land of Confusion. Hope it brings back some souvenirs of clarity!. \u00A0\u00A0`,
+                `Sepertinya AI sedang melakukan liburan tak terjadwal ke Negeri Sebelah. Semoga ini membawa kembali beberapa kenang-kenangan yang jelas!. \u00A0\u00A0`,
               )
               .pauseFor(1000)
               .typeString('<br/><br/>')
-              .typeString('Please try again later. \u00A0')
+              .typeString('Silahkan coba lagi nanti. \u00A0')
               .callFunction(() => {
                 onAiFinished();
               })

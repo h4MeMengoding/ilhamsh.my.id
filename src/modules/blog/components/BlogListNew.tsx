@@ -107,7 +107,7 @@ const BlogListNew = () => {
             {searchTerm ? (
               <div>
                 <span className='mr-2 text-neutral-600 dark:text-neutral-400'>
-                  Search:
+                  Mencari:
                 </span>
                 <span className='italic'>{searchTerm}</span>
               </div>

@@ -11,13 +11,15 @@ const Introduction = () => {
             <li>
               Tinggal di Semarang, Jawa Tengah <span className='ml-1'>🇮🇩</span>
             </li>
-            <li>Siap untuk rekrutmen</li>
+            <li>Terbuka untuk rekrutmen</li>
           </ul>
         </div>
       </div>
 
       <p className='mt-6 leading-[1.8] text-neutral-800 dark:text-neutral-300 md:leading-loose'>
-      Memiliki minat yang besar dalam dunia videografi, senang mengoperasikan kamera dan mengabadikan momen-momen berharga. Selain itu, juga mahir dalam mengedit video untuk menghasilkan konten yang menarik.
+        Memiliki minat yang besar dalam dunia videografi, senang mengoperasikan
+        kamera dan mengabadikan momen-momen berharga. Selain itu, juga mahir
+        dalam mengedit video untuk menghasilkan konten yang menarik.
       </p>
     </section>
   );
