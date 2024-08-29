@@ -13,7 +13,7 @@ interface ProjectsPageProps {
 }
 
 const PAGE_TITLE = 'Projek';
-const PAGE_DESCRIPTION = 'Beberapa proyek yang pernah saya kerjakan.';
+const PAGE_DESCRIPTION = 'Beberapa projek yang pernah saya kerjakan.';
 
 const ProjectsPage: NextPage<ProjectsPageProps> = ({ projects }) => {
   const [visibleProjects, setVisibleProjects] = useState(6);
