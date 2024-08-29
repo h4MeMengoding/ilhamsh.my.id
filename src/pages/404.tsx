@@ -13,7 +13,7 @@ const Custom404: NextPage = () => {
         404
       </StyledHeading>
       <h2 className='animate-pulse text-center text-xl lg:text-xl'>
-        Whoops, there doesn&apos;t seem to be anything here!
+        Whoops, sepertinya ada salah jalan, kembali ke beranda sekarang!
       </h2>
     </Container>
   );

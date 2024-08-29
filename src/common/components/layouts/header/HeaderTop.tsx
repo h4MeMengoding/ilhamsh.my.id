@@ -49,7 +49,7 @@ const HeaderTop = () => {
               <Tooltip title='Verified'>
                 <VerifiedIcon
                   size={18}
-                  className='text-blue-400'
+                  className='text-green-400'
                   data-aos='flip-right'
                 />
               </Tooltip>

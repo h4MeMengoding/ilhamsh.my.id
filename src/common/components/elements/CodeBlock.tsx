@@ -63,7 +63,7 @@ const CodeBlock = ({
             type='button'
             aria-label='Copy to Clipboard'
             onClick={() => handleCopy(children.toString())}
-            data-umami-event='Click Copy Code'
+            data-umami-event='Mengklik Salin Kode'
           >
             {!isCopied ? (
               <CopyIcon size={18} className='text-neutral-400' />

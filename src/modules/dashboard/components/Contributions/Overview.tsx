@@ -38,7 +38,11 @@ const Overview = ({ data }: OverviewProps) => {
       <OverviewItem label='Total' value={totalContributions} />
       <OverviewItem label='Minggu ini' value={totalThisWeekContribution} />
       <OverviewItem label='Terbanyak' value={bestContribution} />
-      <OverviewItem label='Rata-rata' value={averageContribution} unit='/ hari' />
+      <OverviewItem
+        label='Rata-rata'
+        value={averageContribution}
+        unit='/ hari'
+      />
     </div>
   );
 };

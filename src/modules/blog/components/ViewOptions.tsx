@@ -22,7 +22,7 @@ const ViewOptions = ({
         isActive && 'bg-neutral-200 dark:bg-neutral-700 dark:!text-neutral-200',
       )}
       onClick={() => setViewOption(type)}
-      data-umami-event={`Change Blog View to ${type}`}
+      data-umami-event={`Mengganti Tampilan Blog ke ${type}`}
     >
       {icon}
     </button>

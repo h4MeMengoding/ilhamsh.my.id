@@ -15,7 +15,7 @@ const ThemeToggleButton = () => {
         className='mode-toggle'
         onChange={toggleTheme}
         id='switch-theme'
-        data-umami-event={`Switch to ${
+        data-umami-event={`Beralih ke ${
           resolvedTheme === 'light' ? 'Dark' : 'Light'
         } Mode`}
       />

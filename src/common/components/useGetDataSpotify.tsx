@@ -1,4 +1,4 @@
-import useSWR from "swr";
+import useSWR from 'swr';
 
 // Define the interfaces
 interface Artist {
@@ -33,7 +33,7 @@ const fetcher = async (url: string): Promise<Data> => {
 };
 
 export function useGetDataSpotify() {
-  const { data, error } = useSWR<Data>("/api/spotify", fetcher);
+  const { data, error } = useSWR<Data>('/api/spotify', fetcher);
 
   return {
     data,
