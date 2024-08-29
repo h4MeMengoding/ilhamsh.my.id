@@ -1,5 +1,5 @@
 import { format, parseISO } from 'date-fns';
-import { toZonedTime } from 'date-fns-tz';
+import { utcToZonedTime } from 'date-fns-tz';
 
 import { ChapterGroupProps, MdxFileContentProps } from '../types/learn';
 
@@ -16,7 +16,7 @@ export const formatDate = (date: string, type = 'MMMM dd, yyyy') => {
   }
 
   const formattedDate = format(
-    toZonedTime(parseISO(date), 'Asia/Jakarta'),
+    utcToZonedTime(parseISO(date), 'Asia/Jakarta'),
     type,
   );
   return formattedDate;
