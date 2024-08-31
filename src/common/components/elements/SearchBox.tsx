@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import { ImCtrl } from 'react-icons/im';
 import { FiSearch } from 'react-icons/fi';
+import { ImCtrl } from 'react-icons/im';
 
 import { CommandPaletteContext } from '@/common/context/CommandPaletteContext';
 

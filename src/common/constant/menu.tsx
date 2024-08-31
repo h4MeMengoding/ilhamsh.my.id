@@ -12,7 +12,6 @@ import {
   FiCpu as DashboardIcon,
   FiPieChart as AnalyticsIcon,
   FiPocket as HomeIcon,
-  FiRss as BlogIcon,
   FiUser as ProfileIcon,
 } from 'react-icons/fi';
 import { HiStatusOnline as StatusIcon } from 'react-icons/hi';
