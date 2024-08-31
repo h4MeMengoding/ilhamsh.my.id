@@ -2,13 +2,29 @@ import { CareerProps } from '../types/careers';
 
 export const CAREERS: CareerProps[] = [
   {
+    position: 'Freelance Portir',
+    company: 'Jateng Fair 2024',
+    logo: '/images/careers/jtf.png',
+    location: 'PT. PRPP Perseroda',
+    type: 'Full-time',
+    start_date: '2024-7-26',
+    end_date: '2024-8-10',
+    link: 'https://seeru.ae',
+    responsibilities: [
+      'Memberikan karcis parkir kepada pengendara saat memasuki area parkir.',
+      'Membagikan flyer di beberapa titik keramaian.',
+      'Melakukan perhitungan keuangan dan memastikan tiket yang terjual tidak selisih.',
+      'Melakukan pengarahan kepada pengunjung.',
+    ],
+  },
+  {
     position: 'Director & Ketua Produksi',
     company: 'Film Catatan Akhir Sekolah',
     logo: '/images/careers/rosvo.png',
     location: 'SMAN 11 Semarang',
     type: 'Full-time',
     start_date: '2024-4',
-    end_date: null,
+    end_date: '2024-7',
     link: 'https://seeru.ae',
     responsibilities: [
       'Menjadi Director of Photography yang bertugas mengambil semua video termasuk semua isi dari video.',
