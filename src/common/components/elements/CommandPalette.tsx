@@ -126,7 +126,7 @@ const CommandPalette = () => {
 
   const handleFindGoogle = () => {
     const url =
-      'https://www.google.com/search?q=' + queryDebounce + '&ref=hame.my.id';
+      'https://www.google.com/search?q=' + queryDebounce + '&ref=ilhamsh.my.id';
     window.open(url, '_blank');
   };
 

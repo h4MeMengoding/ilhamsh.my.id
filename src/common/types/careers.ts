@@ -8,5 +8,5 @@ export interface CareerProps {
   start_date: string;
   end_date: string | null;
   link: string | null;
-  responsibilities?: string[];
+  responsibilities?: string[] | null;
 }

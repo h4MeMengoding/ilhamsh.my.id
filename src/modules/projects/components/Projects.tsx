@@ -16,7 +16,7 @@ const Projects = ({ projects, loadMore, hasMore }: ProjectsComponentProps) => {
   const filteredProjects = projects.filter((project) => project?.is_show);
 
   if (filteredProjects.length === 0) {
-    return <EmptyState message='No Data' />;
+    return <EmptyState message='Koneksi ke database Error.' />;
   }
 
   return (

@@ -119,8 +119,9 @@ const ContactForm = () => {
       <div className='my-5 flex items-center gap-2 dark:text-neutral-400'>
         <ClockIcon />
         <div className='text-sm'>
-          <span className='font-medium'>Perkiraan merespon:</span> 1-2 Jam
-          (Waktu Kerja)
+          <span className='font-medium'>
+            Selanjutnya pesan akan dibalas melalui email.
+          </span>
         </div>
       </div>
     </form>

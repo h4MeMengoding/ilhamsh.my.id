@@ -16,7 +16,7 @@ const ProjectsDetailPage: NextPage<ProjectsDetailPageProps> = ({ project }) => {
   const PAGE_TITLE = project?.title;
   const PAGE_DESCRIPTION = project?.description;
 
-  const canonicalUrl = `https://hame.my.id/project/${project?.slug}`;
+  const canonicalUrl = `https://ilhamsh.my.id/project/${project?.slug}`;
 
   return (
     <>

@@ -2,6 +2,17 @@ import { CareerProps } from '../types/careers';
 
 export const CAREERS: CareerProps[] = [
   {
+    position: 'Student Staff',
+    company: 'UNNES TV',
+    logo: '/images/careers/unnestv.jpg',
+    location: 'Universitas Negeri Semarang',
+    type: 'Full-time',
+    start_date: '2025-1-8',
+    end_date: null,
+    link: 'https://seeru.ae',
+    responsibilities: [],
+  },
+  {
     position: 'Freelance Portir',
     company: 'Jateng Fair 2024',
     logo: '/images/careers/jtf.png',

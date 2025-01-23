@@ -9,9 +9,9 @@ const Introduction = () => {
         <div className='space-y-4'>
           <ul className='ml-5 flex list-disc flex-col gap-1 text-neutral-700 dark:text-neutral-400 lg:flex-row lg:gap-10'>
             <li>
-              Tinggal di Semarang, Jawa Tengah <span className='ml-1'>🇮🇩</span>
+              Semarang, Jawa Tengah <span className='ml-1'>🇮🇩</span>
             </li>
-            <li>Bersedia untuk rekrutmen</li>
+            <li>Student Staff UNNES TV</li>
           </ul>
         </div>
       </div>
