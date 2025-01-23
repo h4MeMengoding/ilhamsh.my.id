@@ -32,7 +32,7 @@ const HeaderTop = () => {
       <div className='mx-8 hidden items-center justify-between gap-5 py-8 lg:flex'>
         <div className='flex items-center gap-5'>
           <Image
-            src='/images/ilham.png'
+            src='/images/ilhamnew.png'
             alt='Ilham Shofa'
             width={40}
             height={40}

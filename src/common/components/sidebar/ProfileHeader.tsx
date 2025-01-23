@@ -19,7 +19,7 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
       )}
     >
       <Image
-        src='/images/ilham.png'
+        src='/images/ilhamnew.png'
         alt='Ilham Shofa'
         width={expandMenu ? 80 : imageSize}
         height={expandMenu ? 80 : imageSize}
