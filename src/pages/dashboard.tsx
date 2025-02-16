@@ -14,8 +14,7 @@ interface DashboardPageProps {
 
 const PAGE_TITLE = 'Dashboard';
 const PAGE_DESCRIPTION =
-  'Ini adalah dashboard saya, dibuat dengan Next.js API routes dideploy sebagai serverless functions.';
-
+  'This is my personal dashboard, built with Next.js API routes deployed as serverless functions.';
 const DashboardPage: NextPage<DashboardPageProps> = ({ fallback }) => {
   return (
     <SWRConfig value={{ fallback }}>

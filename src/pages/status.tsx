@@ -8,7 +8,7 @@ import Status from '@/modules/status';
 import Uptime from '@/modules/uptime';
 
 const PAGE_TITLE = 'Status';
-const PAGE_DESCRIPTION = 'Beberapa status yang tersedia secara realtime';
+const PAGE_DESCRIPTION = 'Various statuses available in real-time';
 
 const StatusPage: NextPage = () => {
   return (

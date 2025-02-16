@@ -1,23 +1,23 @@
 export const ABOUT = `
 <p>
-    Halo, terimakasih telah mengunjungi website saya.
+    Hello, thank you for visiting my website.
 </p>
 <p>
-    Saya Ilham. Saya memiliki minat yang besar dalam dunia videografi, dimana saya senang mengoperasikan kamera dan mengabadikan momen-momen berharga. Dalam setiap kesempatan, saya selalu berusaha menangkap sudut-sudut terbaik yang dapat menceritakan sebuah kisah melalui lensa kamera. Bagi saya, videografi adalah seni yang memadukan teknik dan kreativitas untuk menghasilkan karya yang bermakna.
+    I am Ilham. I have a great interest in the world of videography, where I enjoy operating cameras and capturing precious moments. In every opportunity, I always strive to capture the best angles that can tell a story through the lens of the camera. For me, videography is an art that combines technique and creativity to produce meaningful works.
 </p>
 <p>
-    Selain mahir dalam mengoperasikan kamera, saya juga pandai dalam mengedit video. Saya menggunakan berbagai software editing untuk menyempurnakan hasil rekaman saya, mulai dari penggabungan video yang saya lakukan di Adobe Premiere Pro, penambahan efek visual di Adobe After Effect, pewarnaan di Davinci, dan penyempurnaan suara di Adobe Audition. Proses editing bagi saya adalah tahap yang sangat penting, dimana sebuah video bisa menjadi lebih hidup dan menarik. Saya selalu berusaha untuk menghasilkan video yang tidak hanya indah secara visual tetapi juga memiliki pesan yang kuat.
+    Besides being skilled in operating cameras, I am also proficient in video editing. I use various editing software to perfect my recordings, from video merging that I do in Adobe Premiere Pro, adding visual effects in Adobe After Effects, coloring in Davinci, and sound enhancement in Adobe Audition. The editing process for me is a very important stage, where a video can become more lively and interesting. I always strive to produce videos that are not only visually beautiful but also have a strong message.
 </p>
 <p>
-    Tidak hanya berkutat dalam dunia videografi, saya juga memiliki kemampuan dasar dalam coding website. Saya senang menciptakan situs web yang fungsional dan estetis, yang dapat mendukung berbagai proyek digital. Dengan kemampuan ini, saya mampu mengintegrasikan konten video saya ke dalam website, sehingga menghasilkan sebuah platform yang menarik dan interaktif. Kombinasi antara videografi dan coding ini memberikan saya banyak kesempatan untuk terus berkreasi dan berinovasi dalam dunia digital.
+    Not only involved in the world of videography, I also have basic skills in website coding. I enjoy creating functional and aesthetic websites that can support various digital projects. With this ability, I can integrate my video content into the website, resulting in an attractive and interactive platform. The combination of videography and coding gives me many opportunities to keep creating and innovating in the digital world.
 </p>
 <p>
-    Saya yakin untuk dapat selalu mengembangkan semua kemampuan yang saya miliki.
+    I am confident in always developing all the skills I have.
 </p>
 <p>
-    Setiap saat saya selalu mengeksplor hal-hal baru yang dapat digunakan dalam dunia kerja, saya dapat bekerja dalam tim maupun individu, dan saya mempunyai prinsip komuniasi adalah hal utama dalam dunia kerja.
+    Every moment I always explore new things that can be used in the working world, I can work in a team or individually, and I have the principle that communication is the main thing in the working world.
 </p>
 <p>
-    Saya tunggu kerjasamanya dengan Anda!
+    I look forward to working with you!
 </p>
 `;

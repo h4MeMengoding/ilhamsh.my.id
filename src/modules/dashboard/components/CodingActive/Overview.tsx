@@ -32,12 +32,12 @@ const Overview = ({ data }: OverviewProps) => {
 
   return (
     <div className='mb-1 grid gap-3 py-2 md:grid-cols-2'>
-      <OverviewItem label='Tanggal Dimulai' value={startDate} />
-      <OverviewItem label='Tanggal Berakhir' value={endDate} />
-      <OverviewItem label='Rata-rata Harian' value={dailyAverage} />
-      <OverviewItem label='Mingu Ini' value={dailyTotal} />
-      <OverviewItem label='Hari Terlama' value={bestDay} />
-      <OverviewItem label='Total Waktu' value={allTimeSinceToday} />
+      <OverviewItem label='Start Date' value={startDate} />
+      <OverviewItem label='End Date' value={endDate} />
+      <OverviewItem label='Daily Average' value={dailyAverage} />
+      <OverviewItem label='This Week' value={dailyTotal} />
+      <OverviewItem label='Best Day' value={bestDay} />
+      <OverviewItem label='Total Time' value={allTimeSinceToday} />
     </div>
   );
 };

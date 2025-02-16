@@ -17,7 +17,7 @@ const About = () => {
     {
       label: (
         <TabLabel>
-          <AboutIcon size={17} /> Perkenalan
+          <AboutIcon size={17} /> Introduction
         </TabLabel>
       ),
       children: <Story />,
@@ -33,7 +33,7 @@ const About = () => {
     {
       label: (
         <TabLabel>
-          <CareerIcon size={17} /> Pengalaman
+          <CareerIcon size={17} /> Experience
         </TabLabel>
       ),
       children: <CareerList />,
@@ -41,7 +41,7 @@ const About = () => {
     {
       label: (
         <TabLabel>
-          <EducationIcon size={17} /> Pendidikan
+          <EducationIcon size={17} /> Education
         </TabLabel>
       ),
       children: <EducationList />,

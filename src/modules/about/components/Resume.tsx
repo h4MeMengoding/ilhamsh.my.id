@@ -4,7 +4,8 @@ import { LuDownload as DownloadIcon } from 'react-icons/lu';
 import GoogleDocsEmbed from '@/common/components/elements/GoogleDocsEmbed';
 
 const Resume = () => {
-  const RESUME_URL = 'https://link.ilhamsh.my.id/CV';
+  const RESUME_URL =
+    'https://docs.google.com/document/d/1orZCvK2IuTQkrQdgqd1A5_5ARE2PCanx6mm4Q5XuUW8/edit?usp=sharing';
 
   return (
     <div className='space-y-5'>
@@ -16,7 +17,7 @@ const Resume = () => {
         data-umami-event='Unduh Resume'
       >
         <DownloadIcon />
-        <span>Unduh Resume</span>
+        <span>Download Resume</span>
       </Link>
 
       <GoogleDocsEmbed src='https://docs.google.com/document/d/1orZCvK2IuTQkrQdgqd1A5_5ARE2PCanx6mm4Q5XuUW8/edit' />

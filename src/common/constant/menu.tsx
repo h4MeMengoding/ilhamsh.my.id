@@ -64,7 +64,7 @@ export const MENU_ITEMS: MenuItemProps[] = [
     title: 'Buku',
     href: '/learn',
     icon: <LearnIcon size={iconSize} />,
-    isShow: false,
+    isShow: true,
     isExternal: false,
     eventName: 'Pages: Learn',
     type: 'Pages',

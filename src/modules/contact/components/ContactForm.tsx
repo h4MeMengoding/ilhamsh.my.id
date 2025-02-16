@@ -73,7 +73,7 @@ const ContactForm = () => {
           <input
             className='w-full rounded-md border border-neutral-200 px-3 py-2 focus:outline-none dark:border-neutral-700'
             type='text'
-            placeholder='Nama*'
+            placeholder='Name*'
             name='name'
             value={formData.name}
             onChange={handleChange}
@@ -92,7 +92,7 @@ const ContactForm = () => {
         <textarea
           className='w-full rounded-md border border-neutral-200 px-3 py-2 focus:outline-none dark:border-neutral-700'
           rows={5}
-          placeholder='Pesan*'
+          placeholder='Message*'
           name='message'
           value={formData.message}
           onChange={handleChange}
@@ -107,7 +107,7 @@ const ContactForm = () => {
           data-umami-event='Mengirim Pesan Ke Kontak'
           disabled={isSubmitDisabled}
         >
-          {isLoading ? 'Mengirim Pesan...' : 'Kirim Pesan'}
+          {isLoading ? 'Wait...' : 'Send'}
         </Button>
       </div>
       {alertVisible && alertMessage && (

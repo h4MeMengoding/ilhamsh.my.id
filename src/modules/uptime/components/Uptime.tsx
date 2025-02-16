@@ -12,7 +12,7 @@ export default function Spotify() {
       <div className='space-y-2'>
         <SectionHeading title='Uptime' icon={<SiBetterstack size={22} />} />
         <SectionSubHeading>
-          <p>Diambil secara iframe dari Betterstack</p>
+          <p>Fetched via iframe from Betterstack</p>
         </SectionSubHeading>
       </div>
       <UptimeCard />

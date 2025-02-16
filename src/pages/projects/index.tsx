@@ -12,8 +12,9 @@ interface ProjectsPageProps {
   projects: ProjectItemProps[];
 }
 
-const PAGE_TITLE = 'Projek';
-const PAGE_DESCRIPTION = 'Beberapa projek yang pernah saya kerjakan.';
+const PAGE_TITLE = 'Projects';
+const PAGE_DESCRIPTION =
+  'Some of the projects I have worked on, both personal and team.';
 
 const ProjectsPage: NextPage<ProjectsPageProps> = ({ projects }) => {
   const [visibleProjects, setVisibleProjects] = useState(6);
