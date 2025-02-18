@@ -8,7 +8,7 @@ const SocialMediaList = () => {
 
   return (
     <div className='space-y-5 pb-2'>
-      <h3 className='text-lg font-medium'>Temukan saya di sosial media</h3>
+      <h3 className='text-lg font-medium'>Find me on social media</h3>
       <div className='flex flex-col justify-between gap-3 md:flex-row'>
         {SOCIAL_MEDIA?.map((item, index: number) => (
           <Button

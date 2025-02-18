@@ -18,36 +18,34 @@ const QueryNotFound = ({
     <div className='flex flex-col items-center space-y-6 px-5 pb-10 pt-5 '>
       <div className='space-y-2 text-center text-neutral-500'>
         <p>
-          Tidak ada hasil untuk
+          No results for
           <span className='ml-1 mr-2 italic text-neutral-600 dark:text-neutral-400'>
             `{query}`
           </span>
-          didalam pencarian.
+          in the search.
         </p>
         <p className='text-neutral-600 dark:text-neutral-400'>
-          Cari menggunakan AI saya atau temukan digoogle?
+          Search using my AI or find it on Google?
         </p>
       </div>
       <div className='flex w-full flex-col justify-center gap-3 lg:flex-row'>
         <Button
           onClick={onAskAiAssistant}
           className='justify-center !bg-green-600'
-          data-umami-event='Klik Tanya Asisten AI'
+          data-umami-event='Click Ask AI Assistant'
         >
-          <AiIcon size={20} /> Tanya AI
+          <AiIcon size={20} /> Ask AI
         </Button>
         <Button
           onClick={onFindGoogle}
           className='justify-center !bg-indigo-600'
-          data-umami-event='Klik Temukan di Google'
+          data-umami-event='Click Find on Google'
         >
           <GoogleIcon size={20} />
-          Cari di Google
+          Search on Google
         </Button>
       </div>
-      <p className='text-sm text-neutral-500'>
-        Tekan `ESC` untuk keluar dari pencarian
-      </p>
+      <p className='text-sm text-neutral-500'>Press `ESC` to exit the search</p>
     </div>
   );
 };

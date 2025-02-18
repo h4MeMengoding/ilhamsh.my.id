@@ -92,7 +92,7 @@ const BlogListNew = () => {
         message={
           error
             ? 'Error loading posts'
-            : 'Tidak ada artikel. Gagal mendapatkan API Wordpress'
+            : 'No articles. Failed to fetch from Wordpress API'
         }
       />
     );
@@ -107,13 +107,13 @@ const BlogListNew = () => {
             {searchTerm ? (
               <div>
                 <span className='mr-2 text-neutral-600 dark:text-neutral-400'>
-                  Mencari:
+                  Searching:
                 </span>
                 <span className='italic'>{searchTerm}</span>
               </div>
             ) : (
               <h4 className='text-neutral-800 dark:text-neutral-200'>
-                Artikel Terbaru
+                Latest Articles
               </h4>
             )}
             <span className='rounded-full bg-neutral-300 px-2 py-1  text-xs text-neutral-900 dark:bg-neutral-700 dark:text-neutral-50'>

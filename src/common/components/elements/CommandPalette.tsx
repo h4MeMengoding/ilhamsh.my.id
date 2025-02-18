@@ -49,34 +49,34 @@ const CommandPalette = () => {
   const { resolvedTheme, setTheme } = useTheme();
   const queryDebounce = useDebounce(query, 500);
 
-  const placeholders = ['Cari...', 'Atau gunakan CTRL + K untuk membuka'];
+  const placeholders = ['Search...', 'Or use CTRL + K to open'];
 
   const placeholder = placeholders[placeholderIndex];
 
   const menuOptions: MenuOptionProps[] = [
     {
-      title: 'HALAMAN',
+      title: 'PAGES',
       children: MENU_ITEMS?.map((menu) => ({
         ...menu,
         closeOnSelect: true,
       })),
     },
     {
-      title: 'SOSIAL',
+      title: 'SOCIAL',
       children: SOCIAL_MEDIA?.map((menu) => ({
         ...menu,
         closeOnSelect: true,
       })),
     },
     {
-      title: 'LINK',
+      title: 'LINKS',
       children: EXTERNAL_LINKS?.map((menu) => ({
         ...menu,
         closeOnSelect: true,
       })),
     },
     {
-      title: 'TEMA',
+      title: 'THEME',
       children: [
         {
           icon:
@@ -85,7 +85,7 @@ const CommandPalette = () => {
             ) : (
               <DarkModeIcon size={20} />
             ),
-          title: `Beralih ke  ${
+          title: `Switch to ${
             resolvedTheme === 'dark' ? 'Light' : 'Dark'
           } Mode`,
           click: () => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark'),

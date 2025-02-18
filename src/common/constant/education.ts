@@ -18,7 +18,7 @@ export const EDUCATION: EducationProps[] = [
     location: 'Semarang, Jawa Tengah',
     degree: 'S1',
     start_year: 2024,
-    end_year: 'Sekarang',
+    end_year: 'Now',
     link: 'https://unnes.ac.id',
   },
   {

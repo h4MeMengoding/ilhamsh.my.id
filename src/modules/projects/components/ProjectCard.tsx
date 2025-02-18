@@ -24,7 +24,7 @@ const ProjectCard = ({
         {is_featured && (
           <div className='absolute right-0 top-0 z-[2] flex items-center gap-1 rounded-bl-xl rounded-tr-xl bg-lime-300 px-2 py-1 text-[13px] font-medium text-emerald-950'>
             <PinIcon size={15} />
-            <span>Unggulan</span>
+            <span>Featured</span>
           </div>
         )}
         <div className='relative'>

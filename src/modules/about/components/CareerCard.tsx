@@ -22,12 +22,10 @@ const CareerCard = ({
   const [isShowResponsibility, setIsShowResponsibility] =
     useState<boolean>(false);
 
-  const startDateFormatted = format(new Date(start_date), 'MMM yyyy', {
-    locale: id,
-  });
+  const startDateFormatted = format(new Date(start_date), 'MMM yyyy');
   const endDateFormatted = end_date
     ? format(new Date(end_date), 'MMM yyyy')
-    : 'Sekarang';
+    : 'Now';
 
   const durationYears = differenceInYears(
     new Date(end_date || Date.now()),
@@ -41,7 +39,7 @@ const CareerCard = ({
       12) +
     1;
 
-  const durationText = `${durationYears > 0 ? `${durationYears} Tahun${durationYears > 1 ? '' : ''}, ` : ''}${durationMonths} Bulan${durationMonths > 1 ? '' : ''}`;
+  const durationText = `${durationYears > 0 ? `${durationYears} Year${durationYears > 1 ? 's' : ''}, ` : ''}${durationMonths} Month${durationMonths > 1 ? 's' : ''}`;
 
   return (
     <Card className='flex gap-5 border border-neutral-300 px-6 py-4 dark:border-neutral-900'>
@@ -96,7 +94,7 @@ const CareerCard = ({
               'rotate-90 transition-all duration-300': isShowResponsibility,
             })}
           />
-          {isShowResponsibility ? 'Tutup' : 'Tampilkan'} Tanggung Jawab
+          {isShowResponsibility ? 'Close' : 'Show'} Responsibilities
         </button>
         <AnimatePresence>
           {isShowResponsibility && (

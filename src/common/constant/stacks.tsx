@@ -47,9 +47,19 @@ export const STACKS: stacksProps = {
   'Node.js': <SiNodedotjs size={iconSize} className='text-green-600' />,
   Adobe: <SiAdobe size={iconSize} />,
   Canva: <SiCanva size={iconSize} className='text-sky-400' />,
-  'Adobe Premiere Pro': <SiAdobepremierepro size={iconSize} />,
-  'Adobe Audition': <SiAdobeaudition size={iconSize} />,
-  'Adobe After Effects': <SiAdobeaftereffects size={iconSize} />,
-  'Adobe Photoshop': <SiAdobephotoshop size={iconSize} />,
-  'Director of Photography': <BsCamera2 size={iconSize} />,
+  'Adobe Premiere Pro': (
+    <SiAdobepremierepro size={iconSize} className='text-sky-400' />
+  ),
+  'Adobe Audition': (
+    <SiAdobeaudition size={iconSize} className='text-sky-400' />
+  ),
+  'Adobe After Effects': (
+    <SiAdobeaftereffects size={iconSize} className='text-sky-400' />
+  ),
+  'Adobe Photoshop': (
+    <SiAdobephotoshop size={iconSize} className='text-sky-400' />
+  ),
+  'Director of Photography': (
+    <BsCamera2 size={iconSize} className='text-sky-400' />
+  ),
 };

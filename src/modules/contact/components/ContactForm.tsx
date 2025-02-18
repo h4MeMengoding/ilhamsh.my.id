@@ -49,11 +49,11 @@ const ContactForm = () => {
       try {
         const response = await axios.post('/api/contact', { formData });
         if (response.status === 200) {
-          setAlertMessage('Sukses - Pesan terkirim');
+          setAlertMessage('Success - Message sent');
           setFormData(formInitialState);
         }
       } catch (error) {
-        setAlertMessage('Gagal - Failed to send message. Please try again.');
+        setAlertMessage('Failed - Failed to send message. Please try again.');
       } finally {
         setIsLoading(false);
       }
@@ -104,7 +104,7 @@ const ContactForm = () => {
           )}
           type='submit'
           icon={<></>}
-          data-umami-event='Mengirim Pesan Ke Kontak'
+          data-umami-event='Send Message to Contact'
           disabled={isSubmitDisabled}
         >
           {isLoading ? 'Wait...' : 'Send'}
@@ -120,7 +120,7 @@ const ContactForm = () => {
         <ClockIcon />
         <div className='text-sm'>
           <span className='font-medium'>
-            Selanjutnya pesan akan dibalas melalui email.
+            The message will be replied to via email.
           </span>
         </div>
       </div>
