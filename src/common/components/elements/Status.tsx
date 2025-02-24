@@ -9,7 +9,7 @@ const Status = () => {
     >
       <div className='flex items-center gap-2'>
         <motion.div
-          className='h-2 w-2 rounded-full bg-red-400'
+          className='h-2 w-2 rounded-full bg-yellow-400'
           animate={{ scale: [1, 1.4, 1] }}
           transition={{ duration: 0.5, repeat: Infinity }}
         />
